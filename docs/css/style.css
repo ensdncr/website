@@ -400,7 +400,6 @@ ol {
 
 @media (max-width: 576px) {
 	.main__menu .nav__menu {
-		display: none;
 	}
 }
 
