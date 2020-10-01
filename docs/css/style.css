@@ -255,12 +255,6 @@ ol {
 	text-transform: uppercase;
 }
 
-@media (max-width: 576px) {
-	.section__title h2 {
-		font-size: 24px;
-	}
-}
-
 .search-model {
 	display: none;
 	position: fixed;
@@ -392,6 +386,7 @@ ol {
  ---------*/
 
 .main__menu {
+	display: block;
 	position: relative;
 	right: 0;
 	padding-top: 25px;
@@ -399,6 +394,9 @@ ol {
 }
 
 @media (max-width: 576px) {
+	.main__menu {
+		display: none;
+	}
 	.main__menu .nav__menu {
 	}
 }
@@ -406,6 +404,12 @@ ol {
 .main__menu .nav__menu>li {
 	display: inline-block;
 	position: relative;
+}
+
+@media (max-width: 576px) {
+	.main__menu .nav__menu>li {
+		display: block;
+	}
 }
 
 .main__menu .nav__menu>li:last-child a {
@@ -420,6 +424,12 @@ ol {
 	padding: 5px 2px;
 	margin-right: 40px;
 	text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+	.main__menu .nav__menu>li>a {
+		margin-right: 0;
+	}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {

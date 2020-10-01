@@ -1,3 +1,7 @@
+$('.hamburger-menu').click(function () {
+	$('.main__menu').slideToggle()
+})
+
 /* ===================================
 --------------------------------------
 	Boto | Photography HTML Template
@@ -159,4 +163,3 @@ $(window).on('load', function() {
 	});
 
 })(jQuery);
-
